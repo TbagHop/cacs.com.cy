@@ -654,7 +654,7 @@ hr{
 
 }
 
-@media (max-width: 865px) {
+@media (max-width: 880px) {
   .header-bar > ul {
     display: none;
   }
@@ -680,13 +680,13 @@ hr{
   transform: translateY(-8px) rotate(-45deg);
 }
 
-@media screen and (max-width: 865px){
+@media screen and (max-width: 880px){
 	.ul-pr{
 		display: none;
 	}
 }
 
-@media screen and (max-width: 865px) {
+@media screen and (max-width: 880px) {
   .header-bar > ul {
     display: none;
   }
