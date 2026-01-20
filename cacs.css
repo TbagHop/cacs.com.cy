@@ -644,10 +644,6 @@ to {
     border-radius: 5%;
 }
 
-.img-s {
-	width: 100%;
-}
-
 hr{
 	border: 2px solid lightblue;
 }
@@ -746,5 +742,9 @@ hr{
 	max-width: 1200px;
 	margin: unset;
 	padding: 0 2rem;
+}
+
+.img-s {
+	width: 100%;
 }
 }
