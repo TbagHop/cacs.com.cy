@@ -37,6 +37,12 @@ img{
 	-ms-user-select: none;
 }
 
+.p2 {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
 .hidden {
 	display: none;
 }
@@ -79,7 +85,7 @@ img{
 #nav-icon1 span{
   display: block;
   position: absolute;
-  height: 9px;
+  height: 6px;
   width: 100%;
   background: #aaa5a2;
   border-radius: 9px;
@@ -205,7 +211,7 @@ nav ul li:hover{
 .mobile-menu {
   position: fixed;
   top: 16px;
-  right: 16px;
+  left: 50px;
   width: min(360px, calc(100vw - 32px));
   border-radius: 18px;
   background: rgba(20, 41, 82, 0.92);
@@ -297,10 +303,14 @@ nav ul li:hover{
 }
 /*Grid*/
 .containerhome{
-    justify-content: center;
-    width: 100%;
-    padding: 0 8%;
-	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 0 8%;
+	/* margin-bottom: 20px; */
+	max-width: 1200px;
+	margin: 0 auto;
+	gap: 1rem;
 }
 
 .infotitle{
@@ -344,7 +354,13 @@ nav ul li:hover{
 .containerabout{
 	justify-content: center;
 	width: 100%;
+	max-width: 1200px;
 	padding: 0 8%;
+	margin: 0 auto;
+}
+
+.mb {
+	margin-bottom: 2rem;
 }
 
 .rowabout{
@@ -383,7 +399,7 @@ footer{
 
 .footercontainer{
 	width: 100%;
-	padding: 50px 20px 10px;
+	padding: 0 20px 10px;
 }
 
 .socialimg{
@@ -405,18 +421,16 @@ footer{
 	background-color: #142952;
 }
 
-.footernav{
-	margin: 30px 0;
-
-}
-
-.footernav ul{
-	list-style-type: none;
+.footernav {
 	display: flex;
+	list-style-type: none;
 	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 0 auto;
 }
 
-.footernav ul li a{
+.footernav a{
 	cursor: pointer;
 	color: white;
 	margin: 20px;
@@ -512,11 +526,6 @@ to {
 	margin: 0 40px;
 }
   
-
-
-
-
-
 /*links*/
 
 .row{
@@ -530,8 +539,6 @@ to {
 	text-align: center;
 	justify-content: center;
 	padding: 25px 10px;
-	padding-left: 10px;
-	padding-right: 10px;
 	border-radius: 5px;
 	font-size: 26px;
 	cursor: pointer;
@@ -549,7 +556,6 @@ to {
 }
 
 .fstyle{
-	height: 1000px; 
 	margin-bottom: 20px;
 	margin: 20px;
 }
@@ -583,7 +589,10 @@ to {
 	transform: scale(1.05);
 }
 
-
+.learnmore a {
+ text-decoration: none;
+ color: black;
+}
 
 #map{
 	text-align: center;
@@ -593,7 +602,6 @@ to {
 .servicescontainer{
 	justify-content: center;
     width: 100%;
-	height: 10000px;
     padding: 0 8%;
 	margin-bottom: 20px;
 }
@@ -640,6 +648,11 @@ hr{
 	border: 2px solid lightblue;
 }
 
+ ul > hr {
+	display: block;
+	width: 4rem;
+	margin: 0 auto;
+ }
 
 
 /*For mobiles*/
@@ -699,4 +712,35 @@ hr{
  .rowabout {
 	flex-direction: column;
  }
+}
+@media screen and (min-width: 569px) {
+	hr {
+		display: none;
+	}
+	
+	ul > hr {
+		display: block !important;
+		width: 4rem !important;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 569px) {
+  .footernav {
+		flex-direction: column;
+ }
+
+  .footernav > a {
+		margin: unset;
+		margin-top: 1rem;
+ }
+  .footernav > a:last-child {
+		margin-bottom: 1rem;
+ }
+
+ .p2 {
+	max-width: 1200px;
+	margin: unset;
+	padding: 0 2rem;
+}
 }
