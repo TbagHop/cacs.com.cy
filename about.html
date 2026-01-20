@@ -17,34 +17,46 @@
 		<link rel="stylesheet" href="cacs.css">
 	</head>
 	<body>
-		<header> 	
-			<nav>
-				<div class="hcacs">
-          <h1>C.A.C.S</h1>
-          <h2>Computer Systems L.T.D</h2>
-        </div> 
-				<div class="header-bar">
-					<a  href="/"><img class="numeric-logo" src="slogo.png" ></a>
-					<ul>
-							<li><a aria-label="Contact C.A.C.S" href="contact.html">Contact</a></li>
-							<li><a aria-label="View our customers" href="customers.html">Customers</a></li>
-							<li><a aria-label="Learn more about C.A.C.S" href="about.html">About</a></li>
-							<li><a aria-label="Learn more about our services" href="services.html">Services</a></li>
-							<li><a aria-label="Go to homepage" href="/">Home</a></li>
-					</ul>
-				</div>
-				<div class="hamburger">
-					<a  href="/"><img class="numeric-logo" src="slogo.png" ></a>
-					<ul>
-						<li><a aria-label="Contact C.A.C.S" href="contact.html">Contact</a></li>
-						<li><a aria-label="View our customers" href="customers.html">Customers</a></li>
-						<li><a aria-label="Learn more about C.A.C.S" href="about.html">About</a></li>
-						<li><a aria-label="Learn more about our services" href="services.html">Services</a></li>
-						<li><a aria-label="Go to homepage" href="/">Home</a></li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+        <header> 	
+            <nav>
+                <div class="hcacs">
+                    <h1>C.A.C.S</h1>
+                    <h2>Computer Systems L.T.D</h2>
+                </div> 
+                <div class="header-bar">
+                    <a  href="/"><img class="numeric-logo" src="slogo.png" ></a>
+                    <ul class="ul-pr">
+                        <li><a aria-label="Contact C.A.C.S" href="contact.html">Contact</a></li>
+                        <li><a aria-label="View our customers" href="customers.html">Customers</a></li>
+                        <li><a aria-label="Learn more about C.A.C.S" href="about.html">About</a></li>
+                        <li><a aria-label="Learn more about our services" href="services.html">Services</a></li>
+                        <li><a aria-label="Go to homepage" href="/">Home</a></li>
+                    </ul>
+                    <button id="nav-icon1" class="burger" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </button>
+
+                    <div id="menu-backdrop" class="menu-backdrop" hidden></div>
+
+                    <div id="mobile-menu" class="mobile-menu" hidden>
+                    <div class="mobile-menu__top">
+                        <div class="mobile-menu__title">Menu</div>
+                        <button id="menu-close" class="mobile-menu__close" type="button" aria-label="Close menu">✕</button>
+                    </div>
+
+                    <ul class="mobile-menu__list">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="customers.html">Customers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 		<main>
 
 			<div class="fstyle">
@@ -66,7 +78,7 @@
 				</p>
 			</div>	
 		</main>
-		
+
 			<footer>
 				<div class="footercontainer">
 					<div class="footernav">
