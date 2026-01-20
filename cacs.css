@@ -644,6 +644,10 @@ to {
     border-radius: 5%;
 }
 
+.img-s {
+	width: 100%;
+}
+
 hr{
 	border: 2px solid lightblue;
 }
