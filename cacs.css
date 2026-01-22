@@ -561,6 +561,13 @@ to {
 
 }
 
+.contact-icon{
+  width: 40px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .fstyle{
 	margin-bottom: 20px;
 	margin: 20px;
